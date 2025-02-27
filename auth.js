@@ -5,6 +5,7 @@ function PPP() {
     const EP = btoa(PP);
 
     if (EP === P) {
+        sessionStorage.setItem("loggedIn", "true");
         window.location.href = "links.html";
     } else {
         alert("パスワードが違います");
