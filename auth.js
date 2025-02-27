@@ -1,7 +1,7 @@
 const P = btoa("password");
 
 function PPP() {
-    const PP = document.getElementById("password").value;
+    const PP = document.getElementById("ASF-AfterService").value;
     const EP = btoa(PP);
 
     if (EP === P) {
