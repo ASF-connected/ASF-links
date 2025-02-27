@@ -58,7 +58,13 @@
             margin: 2em 0 0;
         }
     </style>
-    <script src="auth.js" defer></script>
+    <script src="auth.js" defer>
+        window.onload = function() {
+            if (sessionStorage.getItem("loggedIn") === "true") {
+            window.location.href = "links.html";
+            }
+        }
+    </script>
 </head>
 <body>
     <img src="file/ASF_logo.png" alt="ロゴ" class="logo1">
