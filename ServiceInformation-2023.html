@@ -62,6 +62,13 @@
             min-width: 600px;
         }
     </style>
+    <script>
+        window.onload = function() {
+            if (sessionStorage.getItem("loggedIn") !== "true") {
+                window.location.href = "index.html";
+            }
+        }
+    </script>
 </head>
 <body>
     <h2>サービスインフォメーション</h2>   
